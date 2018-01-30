@@ -37,7 +37,32 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
 	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.webjars:materializecss:0.96.0')
+	compile('org.webjars:jquery:2.1.4')
+
+	// https://mvnrepository.com/artifact/dom4j/dom4j
+	compile group: 'dom4j', name: 'dom4j', version: '1.6.1'
+	// xml相关
+	compile group: 'com.thoughtworks.xstream', name: 'xstream', version: '1.4.10'
+	//json相关
+	compile group: 'com.alibaba', name: 'fastjson', version: '1.2.44'
+	compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.3'
+	compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
+	compile group: 'commons-lang', name: 'commons-lang', version: '2.6'
+	compile group: 'commons-logging', name: 'commons-logging', version: '1.2'
+	compile group: 'net.sf.ezmorph', name: 'ezmorph', version: '1.0.6'
+	//http相关
+	compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.2.5'
+	compile group: 'org.apache.httpcomponents', name: 'httpcore', version: '4.2.4'
+
+	//页面materializecss,类似bootstrap
+	compile group: 'org.webjars', name: 'materializecss', version: '0.100.2'
+	compile group: 'org.webjars', name: 'jquery', version: '2.1.4'
+
+
+
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+
 }
 
 eclipse {
