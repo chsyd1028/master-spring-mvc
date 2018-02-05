@@ -35,15 +35,15 @@
             </div>
         </div>
 
-        <div class="collection" style="margin-left: 80px;margin-right: 80px">
-            <a th:if="${playlinks.fengxing}!= ''" th:href="${playlinks.fengxing}" class="collection-item">风行：<label th:text="${playlinks.fengxing}"></label></a>
-            <a th:if="${playlinks.youku}!= '' " th:href="${playlinks.youku}" class="collection-item">优酷：<label th:text="${playlinks.youku}"></label></a>
-            <a th:if="${playlinks.qq}!= ''" th:href="${playlinks.qq}" class="collection-item">腾讯：<label th:text="${playlinks.qq}"></label></a>
-            <a th:if="${playlinks.leshi}!= ''" th:href="${playlinks.leshi}" class="collection-item">乐视：<label th:text="${playlinks.leshi}"></label></a>
-            <a th:if="${playlinks.pptv}!= ''" th:href="${playlinks.pptv}" class="collection-item">PP：<label th:text="${playlinks.pptv}"></label></a>
-            <a th:if="${playlinks.sohu}!= ''" th:href="${playlinks.sohu}" class="collection-item">搜狐：<label th:text="${playlinks.sohu}"></label></a>
-            <a th:if="${playlinks.imgo}!= ''" th:href="${playlinks.imgo}" class="collection-item">imgo：<label th:text="${playlinks.imgo}"></label></a>
-            <a th:if="${playlinks.qiyi} != ''" th:href="${playlinks.qiyi}" class="collection-item">爱奇艺：<label th:text="${playlinks.qiyi}"></label></a>
+        <div class="collection" style="margin-left: 80px;margin-right: 80px" th:if="${playlinks != null}">
+            <a th:if="${playlinks.fengxing}!=null and ${playlinks.fengxing}!= ''" th:href="${playlinks.fengxing}" class="collection-item">风行：<label th:text="${playlinks.fengxing}"></label></a>
+            <a th:if="${playlinks.youku}!=null and ${playlinks.youku}!= '' " th:href="${playlinks.youku}" class="collection-item">优酷：<label th:text="${playlinks.youku}"></label></a>
+            <a th:if="${playlinks.qq}!=null and ${playlinks.qq}!= ''" th:href="${playlinks.qq}" class="collection-item">腾讯：<label th:text="${playlinks.qq}"></label></a>
+            <a th:if="${playlinks.leshi}!=null and ${playlinks.leshi}!= ''" th:href="${playlinks.leshi}" class="collection-item">乐视：<label th:text="${playlinks.leshi}"></label></a>
+            <a th:if="${playlinks.pptv}!=null and ${playlinks.pptv}!= ''" th:href="${playlinks.pptv}" class="collection-item">PP：<label th:text="${playlinks.pptv}"></label></a>
+            <a th:if="${playlinks.sohu}!=null and ${playlinks.sohu}!= ''" th:href="${playlinks.sohu}" class="collection-item">搜狐：<label th:text="${playlinks.sohu}"></label></a>
+            <a th:if="${playlinks.imgo}!=null and ${playlinks.imgo}!= ''" th:href="${playlinks.imgo}" class="collection-item">imgo：<label th:text="${playlinks.imgo}"></label></a>
+            <a th:if="${playlinks.qiyi}!=null and ${playlinks.qiyi} != ''" th:href="${playlinks.qiyi}" class="collection-item">爱奇艺：<label th:text="${playlinks.qiyi}"></label></a>
 
         </div>
 
